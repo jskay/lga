@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+  
+{% block content %}
+  <h1>Q70 bus schedule from LGA to the E train</h1>
+  <form action="trip" method="post" name="Trip Information">
+          {{form.hidden_tag()}}      
+      <p>
+          Day:<br>
+          {{form.day(size=1)}}<br>
+      <p>
+          Departure time:<br>
+          {{form.time(size=1)}}<br>
+      </p>
+      <p>
+          Departing from:<br>
+          {{form.depart(size=1)}}<br>
+      </p>
+      <p>
+          Destination:<br>
+          {{form.dest(size=1)}}<br>
+      </p>
+      <p><input type="submit" value="Submit trip info"></p>
+
+  </form>
+  {% endblock %}
+
+
+  
+  

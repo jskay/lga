@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+  
+{% block content %}
+  <h1>Q70 bus schedule from LGA to the E train</h1>
+  <form action="" method="get" name="Trip Information">
+      
+      <p>
+          Terminal D --> Terminal B  --> E Train-Jackson Heights
+      </p>
+      {% for item in trip %}
+      {{ item.lgad}} ------------->{{ item.lgab }} -------------> {{ item.jhs }} <br>
+      {% endfor %}
+      
+  </form>
+
+<object data=http://bustime.mta.info/index#Q70 width="800" height="450">
+<embed src=http://bustime.mta.info/index#Q70 width="800" height="450">
+</embed> Error: Embedded data could not be displayed. </object>
+  
+  {% endblock %}
+
+
+  
+  

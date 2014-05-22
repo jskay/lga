@@ -1,0 +1,25 @@
+{% extends "layout_airport.html" %}
+  
+{% block content %}
+  <h1>Enter Trip Information</h1>
+  <form action="" method="post" name="login">
+      
+      {{form.hidden_tag()}}
+      <p>
+          Please enter your OpenID:<br>
+          {{form.time(size=80)}}<br>
+      </p>
+      <p>
+          Please enter your OpenID:<br>
+          {{form.depart(size=80)}}<br>
+      </p>
+      <p>
+          Please enter your OpenID:<br>
+          {{form.dest(size=80)}}<br>
+      </p>
+      <p><input type="submit" value="Sign In"></p>
+  </form>  
+
+
+  
+  

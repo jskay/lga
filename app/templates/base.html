@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LGA TO NYC FOR $2.50!</title>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">;
+  </head>
+  <body>
+   
+    <header>
+      <div class="container">
+        <h1 class="logo">LGA TO NYC FOR $2.50!</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('q70') }}">Q70 Bus Live</a></li>
+            <li><a href="{{ url_for('mta') }}">MTA Service Status</a></li>
+            <li><a href="{{ url_for('traffic') }}">NYC Traffic Map</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+     
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+     
+  </body>
+</html>
+
